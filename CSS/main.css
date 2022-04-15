@@ -1,11 +1,12 @@
-/*  #164A41 */
-/*  #4D774E */
+/*  #164A41 dark green*/
+/*  #4D774E green*/
 
-/*  #9DC88D */
-/*  #F1B24A */
+/*  #9DC88D light green*/
+/*  #F1B24A yellow green*/
 
-/*  #FFFFFF */
+/*  #FFFFFF white :)*/
 
+/* #C6B47B GOLD */
 
 * {
     margin: 0;
@@ -16,8 +17,15 @@
     vertical-align: baseline;
     background: transparent;
     font-family: sans-serif;
+    color: white
 }
-
+:root{
+    background: url("../assets/launguphung_edited.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background: linear-gradient(-90deg, rgba(157,200,141,1) 0%, rgba(77,119,78,1) 50%, rgba(22,74,65,1) 100%); */
+}
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -32,21 +40,126 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     border-radius: 15px;
-    background: linear-gradient(180deg, rgba(120,0,246,1) 0%, rgba(255,0,193,1) 100%);
+    background: rgba(175,200,141,1)
+    /* background: linear-gradient(0deg, rgba(79,73,30,1) 0%, rgba(175,200,141,1) 100%); */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgb(150, 52, 255) 0%, rgb(255, 67, 208) 100%);
+    /* background: linear-gradient(0deg, rgba(79,73,30,1) 0%, rgba(175,200,141,1) 100%); */
+    background: rgba(175,200,141,1)
+}
+
+body{
+    overflow: hidden
 }
 
 header {
-    width: 100%;
+    top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2rem;
+    width: 50%;
     height: 7vh;
-    background-color: rgb(22, 0, 75);
+    font-family: 'Rubik', sans-serif;
+    /* background-color: rgb(22, 0, 75); */
+}
+
+header h {
+    cursor: pointer;
+    color: #C6B47B;
+    font-size: 20px;
 }
 
 a {
     cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
 }
 
+header a p{
+    color: #C6B47B;
+    position: relative;
+    font-size: 20px;
+    padding: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    /* border-radius: 1rem; */
+    transition: ease-in-out 0.3s
+}
+
+header a p:hover{
+border-bottom: 2px solid white;    
+    /* color: black */
+}
+
+.section{
+    height: 100vh;
+}
+
+#section-2 {
+    background-color: white;
+    z-index: 1
+}
+
+#section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#section-1 img {
+    height: 100%;
+    /* transform: translate(0, 100px); */
+    object-fit: auto;
+    z-index: -1
+}
+
+#intro_para {
+    width: 40%;
+    line-height: 2rem;
+}
+
+#intro_para h {
+    font-size: 50px;
+    font-weight: bold;
+    color: #C6B47B;
+}
+#quote {
+    margin-top: 2rem
+}
+
+#explore {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 2rem;
+    height: 75px;
+    transition: ease-in-out 0.2s;
+    border-radius: 5px;
+}
+
+#explore p{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 100%;
+    width: 50%;
+    background-color: #C6B47B;
+    color: black;
+    border-radius: 2px;
+    position: relative;
+    left: -5px;
+    transition: ease-in-out 0.2s;
+}
+
+#explore p:hover{
+    background: rgb(14, 14, 14);
+    color: #C6B47B
+}
+
+footer {
+    background: black;
+    height: 10vh;
+}
