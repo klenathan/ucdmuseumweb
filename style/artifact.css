@@ -1,0 +1,36 @@
+/*  #164A41 dark green*/
+/*  #4D774E green*/
+
+/*  #9DC88D light green*/
+/*  #F1B24A yellow green*/
+
+/*  #FFFFFF white :)*/
+
+/* Artifact content */
+.artifact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.test_img {
+    width: 300px;
+    object-fit: auto;
+    /* border:  */
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem
+}
+
+.info-overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-overview h {
+    border-bottom: 2px black solid;
+}
