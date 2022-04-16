@@ -16,8 +16,13 @@
     background-size: cover;
     --gold: #C6B47B
 }
+
 #overview {
     margin: 5rem 15rem;
+}
+
+main {
+    min-height: 100vh
 }
 
 .dynasty-desc h1 {
