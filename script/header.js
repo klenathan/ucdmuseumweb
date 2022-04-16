@@ -1,10 +1,12 @@
 let header = `
     <nav>
         <ul class="navbar">
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="3dview.html">Gallery</a></li>
-        <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Museum abcxyz</a></li>
+            <li><a href="artifacts.html">Artifacts</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Search</a></li>
+
         </ul>    
     </nav>
 `;
