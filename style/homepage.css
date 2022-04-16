@@ -1,0 +1,86 @@
+:root {
+    background: url("../assets/launguphung_edited.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background: linear-gradient(-90deg, rgba(157,200,141,1) 0%, rgba(77,119,78,1) 50%, rgba(22,74,65,1) 100%); */
+}
+
+#landing-page {
+    overflow: hidden
+}
+
+/* Content */
+.content-section {
+    height: 88vh;
+}
+
+#section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#section-1 img {
+    height: 100%;
+    /* transform: translate(0, 100px); */
+    object-fit: auto;
+    z-index: -1
+}
+
+#intro_para {
+    width: 40%;
+    line-height: 2;
+}
+
+#intro_para h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #C6B47B;
+}
+
+#intro_para a {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#quote {
+    margin-top: 2rem
+}
+
+#explore {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 2rem;
+    height: 75px;
+    transition: ease-in-out 0.2s;
+    border-radius: 5px;
+}
+
+#explore img {
+    z-index: 0;
+    object-fit: cover;
+    width: 50%;
+    height: 75px;
+}
+
+#explore p {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 100%;
+    width: 50%;
+    background-color: #C6B47B;
+    color: black;
+    border-radius: 2px;
+    position: relative;
+    left: -5px;
+    transition: ease-in-out 0.2s;
+}
+
+#explore p:hover {
+    background: rgb(14, 14, 14);
+    color: #C6B47B
+}

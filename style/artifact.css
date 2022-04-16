@@ -7,30 +7,51 @@
 /*  #FFFFFF white :)*/
 
 /* Artifact content */
-.artifact-info {
-    display: flex;
-    flex-direction: column;
+
+:root {
+    background-color: black;
 }
 
-.test_img {
-    width: 300px;
-    object-fit: auto;
-    /* border:  */
+#overview {
+    margin: 5rem 15rem;
 }
 
-.overview {
+.dynasty-desc h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #C6B47B;
+    text-align: center;
+}
+
+.dynasty-desc p {
+    line-height: 2;
+    margin: 10px 0;
+}
+
+.img-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    margin-top: 2rem
+    gap: 10px;
+    margin: 2rem 0;
 }
 
-.info-overview {
-    display: flex;
-    flex-direction: column;
+.img-row a {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.info-overview h {
-    border-bottom: 2px black solid;
+.img-info {
+    margin: auto;
+    text-align: center;
+}
+
+.img-info img {
+    height: 10rem;
+    width: 15rem;
+}
+
+.img-info p:hover {
+    color: #C6B47B;
 }
