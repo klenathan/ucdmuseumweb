@@ -9,20 +9,13 @@
 /* Artifact content */
 
 :root {
-    
+    background-color: black;
     background: url("../assets/launguphung_edited.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
-    background-color: black;
     --gold: #C6B47B
 }
-
-body {
-    /* background-color: red */
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-}
-
 #overview {
     margin: 5rem 15rem;
 }
@@ -37,57 +30,55 @@ body {
 .dynasty-desc p {
     line-height: 2;
     margin: 10px 0;
+    font-size: 1.1rem
 }
 
 .img-row {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     flex-direction: row;
     justify-content: center;
     margin: 2rem 0;
-    column-gap: 7rem;
-    row-gap: 3rem;
+    gap: 3rem
 }
 
 .img-row a {
     cursor: pointer;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 0.5rem;
 }
 
 .img-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
     margin: auto;
-    text-align: left;
-    background: white;
+    text-align: center;
+    border: 2px solid var(--gold);
+    background: rgba(0, 0, 0, 0.5);
     transition: ease-in-out 0.3s;
-}
-
-
-.date {
-    font-weight: bolder;
+    
 }
 
 .img-info img {
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
-    height: 10rem;
+    width: 50%;
     object-fit: auto;
-    border-bottom: 5px solid var(--gold);
-    transition: ease-in-out 0.3s;
 }
 
 .img-info p {
-    padding-left: 1rem;
-    color: black;
-    font-weight: 700;
-    line-height: 2rem
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    color: #f1f1f1
 }
 
-.img-info:hover {
-    background: var(--gold)
+.img-info:hover{
+    background-color: var(--gold);
 }
 
-.img-info:hover img{
-    border-bottom: 5px solid black;
+.img-info:hover > p{
+    color: black
 }

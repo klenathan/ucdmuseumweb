@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
     background: url("../assets/launguphung_edited.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     /* background: linear-gradient(-90deg, rgba(157,200,141,1) 0%, rgba(77,119,78,1) 50%, rgba(22,74,65,1) 100%); */
+    --gold: #C6B47B
+}
+
+body {
+    overflow: hidden;
 }
 
 #landing-page {
@@ -37,6 +44,7 @@
     font-size: 3rem;
     font-weight: bold;
     color: #C6B47B;
+    font-family: 'Poppins', sans-serif;
 }
 
 #intro_para a {
@@ -56,7 +64,6 @@
     margin-top: 2rem;
     height: 75px;
     transition: ease-in-out 0.2s;
-    border-radius: 5px;
 }
 
 #explore img {
@@ -64,6 +71,8 @@
     object-fit: cover;
     width: 50%;
     height: 75px;
+    border: 2px solid var(--gold);
+    border-right: 0px;
 }
 
 #explore p {
@@ -72,15 +81,18 @@
     padding-left: 20px;
     height: 100%;
     width: 50%;
-    background-color: #C6B47B;
-    color: black;
+    background: rgb(14, 14, 14);
+    color: #C6B47B;
+    font-size: 1.3rem;
     border-radius: 2px;
     position: relative;
     left: -5px;
     transition: ease-in-out 0.2s;
+    border: 2px solid var(--gold);
+    border-left: 0px;
 }
 
-#explore p:hover {
-    background: rgb(14, 14, 14);
-    color: #C6B47B
+#explore:hover > p{
+    background-color: #C6B47B;
+    color: black;
 }

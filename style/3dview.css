@@ -1,5 +1,6 @@
 :root {
     background-color: black;
+    --gold: #C6B47B
 }
 
 #page3d {
@@ -9,9 +10,12 @@
 .artifact-overview {
     display: flex;
     flex-direction: row;
-    margin: 7rem 15rem;
+    margin: 7rem 15rem 2rem 15rem;
     padding: 20px;
     line-height: 2;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 2rem;
 }
 
 .artifact-info {
