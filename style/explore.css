@@ -12,7 +12,6 @@
     background-color: black;
     background: url("../assets/launguphung_edited.jpg");
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: cover;
     --gold: #C6B47B
 }
@@ -22,13 +21,13 @@
 }
 
 main {
-    min-height: 100vh
+    min-height: 80vh
 }
 
 .dynasty-desc h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: #C6B47B;
+    color: var(--gold);
     text-align: center;
 }
 
@@ -74,7 +73,6 @@ main {
 }
 
 .img-info p {
-    padding-left: 2rem;
     font-size: 1.5rem;
     width: 100%;
     color: #f1f1f1

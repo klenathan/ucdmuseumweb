@@ -1,17 +1,19 @@
 
-let eraList = ["one", "two"];
+let eraList = ["China", "two", "three", "four"];
 
-for (let i = 0; i<4; i++) {
+for (let i = 0; i<eraList.length; i++) {
     var era = document.createElement('a')
-    era.setAttribute('href', "3dview1.html");
+    let target = "explore/" + eraList[i].toLowerCase()  + ".html"
+    era.setAttribute('href', target);
     era.setAttribute('class', "img-info");
+    era.alt = "Redirect"
 
     var image = document.createElement('img')
     image.src = "assets/artifact/Sculpture “Bust of Róża Loewenfeld”.jpeg"
     image.alt = "just a demo picture"
 
     var eraName = document.createElement('p')
-    eraName.innerHTML = 'Lorem ipsum'
+    eraName.innerHTML = eraList[i]
 
     era.appendChild(image)
     era.appendChild(eraName)
