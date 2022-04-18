@@ -1,6 +1,6 @@
 for (let i = 0; i<12; i++) {
     var artifact = document.createElement('a')
-    artifact.setAttribute('href', "../3dview.html");
+    artifact.setAttribute('href', "/artifact/3dview.html");
     artifact.setAttribute('class', "img-info");
 
     var image = document.createElement('img')
