@@ -1,7 +1,13 @@
 {
     "haetae": {
         "title":"Haetae (Korean Foo Dog statue)",
+        "material": "stone",
+        "desc": "abcxyz",
         "target": "https://sketchfab.com/3d-models/haetae-korean-foo-dog-statue-f1fcf64f86fa4b62a1a138d5718a549c?utm_medium=embed&utm_campaign=share-popup&utm_content=f1fcf64f86fa4b62a1a138d5718a549c"
+    },
+    "budha_statue": {
+        "title": "Bronze-Gilt Budha Statue",
+        "target": "https://sketchfab.com/models/d237f8e61a5749a5be29398b16aa82a7/embed"
     }
 }
 
