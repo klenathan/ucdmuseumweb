@@ -1,5 +1,5 @@
 
-let eraList = ["Portrait", "Statue", "Famous site"];
+let eraList = ["Chinese", "Korean", "Japanese"];
 
 for (let i = 0; i<eraList.length; i++) {
     var era = document.createElement('a')

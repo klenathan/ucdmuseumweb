@@ -9,7 +9,7 @@ for (let i = 0; i<48; i++) {
     if (i % 4 === 0) {
         image.src = "assets/artifact/Sculpture “Bust of Róża Loewenfeld”.jpeg"
     } else {
-        image.src = "assets/test.jpg"
+        image.src = "assets/artifact/budha_gilt.png"
     }
     
     image.alt = "just a demo picture"
