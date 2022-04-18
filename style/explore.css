@@ -17,7 +17,7 @@
 }
 
 #overview {
-    margin: 5rem 15rem;
+    margin: 5rem 5rem;
 }
 
 main {
@@ -38,9 +38,7 @@ main {
 }
 
 .img-row {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 2rem 0;
@@ -55,33 +53,38 @@ main {
 
 .img-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 90%;
     margin: auto;
     text-align: center;
-    border: 2px solid var(--gold);
-    background: rgba(0, 0, 0, 0.5);
+    /* border: 5px solid var(--gold); */
+    border-radius: 17px;
+    background: #f1f1f1;
     transition: ease-in-out 0.3s;
     
 }
 
 .img-info img {
-    width: 50%;
-    object-fit: auto;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-bottom: 5px solid var(--gold);
+    border-radius: 1rem 1rem 0 0 
 }
 
 .img-info p {
     font-size: 1.5rem;
     width: 100%;
-    color: #f1f1f1
+    color: black;
+    padding: 0.5rem 0
 }
 
 .img-info:hover{
     background-color: var(--gold);
 }
 
-.img-info:hover > p{
-    color: black
+.img-info:hover > img {
+    border-bottom: 5px solid black;
 }

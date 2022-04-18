@@ -6,7 +6,12 @@ for (let i = 0; i<48; i++) {
     artifact.setAttribute('class', "img-info");
 
     var image = document.createElement('img')
-    image.src = "assets/artifact/Sculpture “Bust of Róża Loewenfeld”.jpeg"
+    if (i % 4 === 0) {
+        image.src = "assets/artifact/Sculpture “Bust of Róża Loewenfeld”.jpeg"
+    } else {
+        image.src = "assets/test.jpg"
+    }
+    
     image.alt = "just a demo picture"
 
     var artifactName = document.createElement('p')

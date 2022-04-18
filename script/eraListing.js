@@ -1,5 +1,5 @@
 
-let eraList = ["China", "two", "three", "four"];
+let eraList = ["Portrait", "Statue", "Famous site"];
 
 for (let i = 0; i<eraList.length; i++) {
     var era = document.createElement('a')
@@ -9,7 +9,11 @@ for (let i = 0; i<eraList.length; i++) {
     era.alt = "Redirect"
 
     var image = document.createElement('img')
-    image.src = "assets/artifact/Sculpture “Bust of Róża Loewenfeld”.jpeg"
+    if (i % 2 === 1) {
+        image.src = "assets/test.jpg"
+    } else {
+        image.src = "assets/artifact/Sculpture “Bust of Róża Loewenfeld”.jpeg"
+    }
     image.alt = "just a demo picture"
 
     var eraName = document.createElement('p')
@@ -25,7 +29,7 @@ for (let i = 0; i<eraList.length; i++) {
         <img
         src="assets/artifact/Sculpture “Bust of Róża Loewenfeld”.jpeg"
         alt=""
-        />
+        />'
         <p>Lorem ipsum</p> 
     </a>
 */
