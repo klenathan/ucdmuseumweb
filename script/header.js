@@ -1,9 +1,9 @@
 let header = `
     <nav>
         <ul class="navbar" id="navbar"> 
-            <li><a href="../index.html">Museum abcxyz</a></li>
-            <li><a href="../explore.html" class="nav-item">Explore</a></li>
-            <li><a href="../artifacts.html" class="nav-item">Artifacts</a></li>
+            <li><a href="./index.html">Museum abcxyz</a></li>
+            <li><a href="./explore.html" class="nav-item">Explore</a></li>
+            <li><a href="./artifacts.html" class="nav-item">Artifacts</a></li>
             <li><a href="#" class="nav-item">Search</a></li>
             <li><a class="menu-icon" onclick="openMenu()">Menu</a></li>
         </ul>    
