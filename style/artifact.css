@@ -77,13 +77,12 @@ body {
 .img-info {
     margin: auto;
     text-align: left;
-    width: max-content;
+    width: 20rem;
+    height: 20rem;
     background: white;
     transition: ease-in-out 0.3s;
     border-radius:20px;
-    
     border-radius: 0.8rem;
-    
     border: 5px solid var(--gold);
 }
 
