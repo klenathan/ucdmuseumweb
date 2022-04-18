@@ -1,9 +1,9 @@
-let header = `
+let newHeader = `
     <nav>
         <ul class="navbar" id="navbar"> 
-            <li><a href="index.html">Museum abcxyz</a></li>
-            <li><a href="explore.html" class="nav-item">Explore</a></li>
-            <li><a href="artifact.html" class="nav-item">Artifacts</a></li>
+            <li><a href="../index.html">Museum abcxyz</a></li>
+            <li><a href="../explore.html" class="nav-item">Explore</a></li>
+            <li><a href="../artifact.html" class="nav-item">Artifacts</a></li>
             <li><a href="#" class="nav-item">Search</a></li>
             <li><a class="menu-icon" onclick="openMenu()">Menu</a></li>
         </ul>    
@@ -14,7 +14,7 @@ let header = `
         <a href="#" >Search</a>
     </nav>
 `;
-document.querySelector("#header").innerHTML = header;
+document.querySelector("#new-header").innerHTML = newHeader;
 
 // Responsive menu on mobile devices 
 function openMenu() {
