@@ -3,7 +3,7 @@ let eraList = ["China", "two", "three", "four"];
 
 for (let i = 0; i<eraList.length; i++) {
     var era = document.createElement('a')
-    let target = "explore/" + eraList[i].toLowerCase()  + ".html"
+    let target = eraList[i].toLowerCase()  + ".html"
     era.setAttribute('href', target);
     era.setAttribute('class', "img-info");
     era.alt = "Redirect"
