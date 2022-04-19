@@ -26,7 +26,7 @@ example = {
     "material": "Large stone",
     "date": "7th century",
     "found_in": "Gyeongju, Gyeongsangbuk-do",
-    "description": "The tortoise of the pedestal extends its head high upward and its legs forward. There are large honeycomb-shaped hexagonal carvings on its back, and lotus designs are carved around the stele’s seat. The ornamental capstone is carved with three dragons on the left and three on the right, which coiled around each other to form a support for a “magic pearl.”",
+    "description": "The tortoise of the pedestal extends its head high upward and its legs forward. There are large honeycomb-shaped hexagonal carvings on its back, and lotus designs are carved around the stele's seat. The ornamental capstone is carved with three dragons on the left and three on the right, which coiled around each other to form a support for a \"magic pearl\".",
     "target": "963ee70d46e04c9cbbb81e7f2e63b564/embed"
   },
   "Jizo_Ojizo_sama": {
@@ -37,8 +37,8 @@ example = {
     "description": "The Jizo statues are a common sight, especially by roadsides and in graveyards. Traditionally, he is seen as the guardian of children, and in particular, children who died before their parents. He has been worshipped as the guardian of the souls of mizuko, the souls of stillborn, miscarried or aborted foetuses, in the ritual of mizuko kuyō.",
     "target": "3f9bee4975bd47c984093631b90a8cf5/embed"
   },
-  "Japanese_Meji_period_statue_of_a_man_smoking": {
-    "name": "Japanese Meji period statue of a man smoking",
+  "Statue_of_a_man_smoking": {
+    "name": "Statue of a man smoking",
     "material": "Carved boxwood, ivory and pearl accents",
     "date": "Meji period (1868-1912)",
     "found_in": "Japanese",
@@ -58,7 +58,7 @@ example = {
     "material": "Stone",
     "date": "13th century",
     "found_in": "Wuchang, Wuhan, Hubei Province",
-    "description": "The pagoda has eight sides and seven storeys, with four of the storeys including carvings of Buddhist figures carved in small niches.[7] It is 11.25 meters tall, with a diameter of 4.25 meters at the \"Sumeru Throne\" (須彌座 xūmízuò) style base.",
+    "description": "The pagoda has eight sides and seven storeys, with four of the storeys including carvings of Buddhist figures carved in small niches. It is 11.25 meters tall, with a diameter of 4.25 meters at the \"Sumeru Throne\" (須彌座 xūmízuò) style base.",
     "target": "6138b5834341414eb819cf4b389ec25d/embed"
   },
   "Great_Wall": {
@@ -66,7 +66,7 @@ example = {
     "material": "Stone brick and mortal",
     "date": "14th century",
     "found_in": "Hebei Province",
-    "description": "The Great Wall measure 8,850 km (5,500 mi) from Jiayu Pass in the west to the sea in Shanhai Pass, then looping over to terminate in Manchuria at the Hushan Great Wall.[1] This is made up of 6,259 km (3,889 mi) sections of actual wall, 359 km (223 mi) of trenches and 2,232 km (1,387 mi) of natural defensive barriers such as hills and rivers.",
+    "description": "The Great Wall measure 8,850 km (5,500 mi) from Jiayu Pass in the west to the sea in Shanhai Pass, then looping over to terminate in Manchuria at the Hushan Great Wall. This is made up of 6,259 km (3,889 mi) sections of actual wall, 359 km (223 mi) of trenches and 2,232 km (1,387 mi) of natural defensive barriers such as hills and rivers.",
     "target": "405928f2624742d18408896d26fc0d28/embed"
   },
   "Celestial_Muscian_Jiyue_tian": {
