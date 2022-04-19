@@ -2,7 +2,7 @@ let explore_page = document.getElementById('explore_page')
 
 let chinese_list = ["Wuying_Pagoda", "Great_Wall", "Celestial_Muscian_Jiyue_tian"]
 let korean_list = ["Buddha_statue_Unified_Silla", "Tombstone_of_King_Taejong_Muyeol_Gyeongju"]
-let japan_list = ["Jizo_Ojizo_sama", "Japanese_Meji_period_statue_of_a_man_smoking", "Bishamonten"]
+let japan_list = ["Jizo_Ojizo_sama", "Statue_of_a_man_smoking", "Bishamonten"]
 
 fetch("../artifact_data.json")
     .then(res => res.json())
@@ -24,7 +24,7 @@ fetch("../artifact_data.json")
 function renderCard (inputList, jsonData) {
     for (var i in inputList) {
         var artifact = document.createElement('a')
-        artifact.setAttribute('href', "../artifact/"+inputList[i]+".html");
+        artifact.setAttribute('href', "../artifact/"+inputList[i].toLowerCase()+".html");
         artifact.setAttribute('class', "img-info");
         // console.log(inputList[i])
         var image = document.createElement('img')

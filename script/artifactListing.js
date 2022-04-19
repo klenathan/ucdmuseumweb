@@ -1,11 +1,11 @@
-fetch("../artifact_data.json")
+fetch("artifact_data.json")
     .then(res => res.json())
     .then(data => {
         // console.log(data)
         for (var key in data){
             
             // console.log(artifact_key)
-            target_href = "artifact/" + key + ".html"
+            target_href = "artifact/" + key.toLowerCase() + ".html"
             var artifact = document.createElement('a')
             artifact.setAttribute('href', target_href);
             artifact.setAttribute('class', "img-info");

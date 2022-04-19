@@ -1,6 +1,6 @@
 :root {
     background-color: black;
-    background: url("/assets/launguphung_edited.jpg");
+    background: url("../assets/launguphung_edited.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     --gold: #C6B47B;
