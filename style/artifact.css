@@ -31,6 +31,10 @@ body {
     flex-direction: column;
 }
 
+main {
+    min-height: 80vh
+}
+
 .dynasty-desc {
     width: 100%;
     display: flex;

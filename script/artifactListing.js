@@ -11,7 +11,7 @@ fetch("../artifact_data.json")
             artifact.setAttribute('class', "img-info");
         
             var image = document.createElement('img')
-            image.src = "assets/artifact/budha_gilt.png"
+            image.src = "assets/artifact/"+key+".png"
             
             image.alt = data[key]["name"]
         

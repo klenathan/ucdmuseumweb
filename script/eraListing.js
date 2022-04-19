@@ -9,10 +9,12 @@ for (let i = 0; i<eraList.length; i++) {
     era.alt = "Redirect"
 
     var image = document.createElement('img')
-    if (i % 2 === 1) {
-        image.src = "assets/test.jpg"
+    if (eraList[i] === "Chinese") {
+        image.src = "assets/terracotta_army.jpg"
+    } else if (eraList[i] === "Korean") {
+        image.src = "assets/korean_palace.jpg"
     } else {
-        image.src = "assets/artifact/Sculpture “Bust of Róża Loewenfeld”.jpeg"
+        image.src = "assets/fuji_mount.jpg"
     }
     image.alt = "just a demo picture"
 

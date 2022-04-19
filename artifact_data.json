@@ -19,7 +19,7 @@
         "name": "Jizo (Ojizo-sama)",
         "material": "Granite",
         "date": "Unknown",
-        "found_in": "Japanese",
+        "found_in": "Japan",
         "description": "The Jizo statues are a common sight, especially by roadsides and in graveyards. Traditionally, he is seen as the guardian of children, and in particular, children who died before their parents. He has been worshipped as the guardian of the souls of mizuko, the souls of stillborn, miscarried or aborted foetuses, in the ritual of mizuko kuyo.",
         "target": "3f9bee4975bd47c984093631b90a8cf5/embed"
     },
@@ -27,7 +27,7 @@
         "name": "Japanese Meji period statue of a man smoking",
         "material": "Carved boxwood, ivory and pearl accents",
         "date": "Meji period (1868-1912)",
-        "found_in": "Japanese",
+        "found_in": "Japan",
         "description": "A quality Meiji period Japanese bronze statue of a seated gentleman smoking a pipe,it is carved magnificently with fine detailling.",
         "target": "c03779126db440a4a2067dd8b2f2fa1c/embed"
     },
@@ -58,9 +58,9 @@
     "Celestial_Muscian_Jiyue_tian": {
         "name": "Celestial Muscian (Jiyue tian)",
         "material": "Sandstone",
-        "date": "Before 480",
+        "date": "386 - 534",
         "found_in": "Shanxi Province,",
-        "description": "di ngu thui pp",
+        "description": "Not available",
         "target": "82a3e0fab235495caa8fa1f74608bd04/embed"
     }
 }
