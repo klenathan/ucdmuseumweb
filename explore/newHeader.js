@@ -1,7 +1,11 @@
 let newHeader = `
     <nav>
         <ul class="navbar" id="navbar"> 
-            <li><a href="../index.html">Museum abcxyz</a></li>
+            <li>
+            <a href="../index.html" >
+            <img class="nav-logo" src="../assets/logo.png" alt="Logo">
+            </a>
+            </li>
             <li><a href="../explore.html" class="nav-item">Explore</a></li>
             <li><a href="../artifact.html" class="nav-item">Artifacts</a></li>
             <li><a href="#" class="nav-item">Search</a></li>

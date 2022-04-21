@@ -77,6 +77,13 @@ body {
     font-size: 1.4rem;
   }
 
+  .nav-logo {
+    height: 5vh;
+    object-fit: cover;
+    filter: hue-rotate(180deg) saturate(0) brightness(0);
+    
+  }
+
   .navbar li {
     cursor: pointer;
     font-size: 20px;
@@ -161,6 +168,14 @@ body {
     font-size: 1.4rem;
   }
 
+  .nav-logo {
+    height: 7vh;
+    object-fit: cover;
+    transition: ease-in-out 0.2s;
+    padding: 1rem;
+    
+  }
+
   .navbar li {
     cursor: pointer;
     font-size: 20px;
@@ -169,6 +184,10 @@ body {
   .navbar li:hover > a {
     border-bottom: 2px solid white;
     /* color: black */
+  }
+
+  .nav-logo:hover {
+    background: rgba(255, 255, 255, 0.2)
   }
 
   .menu-icon {
