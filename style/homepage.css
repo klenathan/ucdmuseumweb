@@ -9,7 +9,7 @@
     --gold: #C6B47B
 }
 
-@media (max-width: 767px){
+@media screen and (max-width: 1023px){
     main{
         min-height: 90vh;
     }
@@ -19,9 +19,9 @@
     }
     
     #section-1 {
-        margin-top: 20vh;
+        margin-top: 1rem;
         display: flex;
-        position:static;
+        /* position: static; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -34,9 +34,10 @@
     }
 
     /* Content */
-    .content-section {
-        height: 88vh;
-    }
+    /* .content-section {
+        height: 100vh;
+    } */
+
     #intro_para {
         width: 90%;
         line-height: 2;
@@ -108,7 +109,7 @@
     }
 
 }
-@media (min-width: 768px){
+@media screen and (min-width: 1024px){
     body {
         overflow: hidden;
     }
@@ -140,7 +141,7 @@
     }
 
     #intro_para h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: bold;
         color: #C6B47B;
         font-family: 'Poppins', sans-serif;
@@ -153,7 +154,7 @@
     }
 
     #quote {
-        margin-top: 2rem
+        margin-top: 2rem;
     }
 
     #explore {
@@ -196,7 +197,7 @@
         width: 50%;
         background: rgb(14, 14, 14);
         color: #C6B47B;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         border-radius: 2px;
         position: relative;
         left: -5px;

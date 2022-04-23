@@ -1,16 +1,22 @@
 let header = `
     <nav>
-        <ul class="navbar" id="navbar"> 
+        <ul class="navbar" id="navbar">
             <li>
             <a href="index.html" >
-            <img class="nav-logo" src="../assets/logo.png" alt="Logo">
+            <img class="nav-logo" src="assets/logo.png" alt="Logo">
             </a>
             </li>
             <li><a href="explore.html" class="nav-item">Explore</a></li>
             <li><a href="artifact.html" class="nav-item">Artifacts</a></li>
-            <li><a href="#" class="nav-item">Search</a></li>
+
+            <li id="search-container">
+                <input id="search_artifact" type="search" placeholder="Search artifact...">
+                <button onclick="searchItem()" id="search-btn" type="submit"><i
+                class="icon-style fa-2x fa-solid fa-magnifying-glass" style="color: #c6b47b;"></i></button>
+            </li>
+
             <li><a class="menu-icon" onclick="openMenu()">Menu</a></li>
-        </ul>    
+        </ul>
     </nav>
     <nav id="responsive-menu">
         <a href="explore.html" >Explore</a>
@@ -20,7 +26,7 @@ let header = `
 `;
 document.querySelector("#header").innerHTML = header;
 
-// Responsive menu on mobile devices 
+// Responsive menu on mobile devices
 function openMenu() {
     let x = document.getElementById("responsive-menu");
     if (x.style.transform != 'translate(100vw, 0px)') {
@@ -29,4 +35,28 @@ function openMenu() {
         x.style.transform = 'translate(0, 0vh)'
     }
 }
-    
+
+function searchItem() {
+    fetch("artifact_data.json")
+        .then(res => res.json())
+        .then(data => {
+            Object.keys(data).forEach(function (key) {
+                let userInput = document.getElementById('search_artifact').value;
+                console.log(userInput)
+                let target = key.toLowerCase().split("_")
+
+                // console.log(target)
+                Object.keys(target).forEach(function (k) {
+                    if (target[k].includes(userInput)) {
+                        window.location.href = "artifact/" + target.join("_") + ".html";
+                    }
+                    else {
+                        console.log("nooo")
+                    }
+                })
+            });
+        }
+
+
+        )
+}

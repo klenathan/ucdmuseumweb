@@ -17,7 +17,7 @@
 }
 
 /* Mobile devices */
-@media (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     #overview {
         margin: 7vh 2rem;
     }
@@ -92,7 +92,7 @@
     }
 }
 
-@media (min-width: 768px){
+@media screen and (min-width: 1024px){
     #overview {
         margin: 5rem 5rem;
     }

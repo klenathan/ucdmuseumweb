@@ -51,7 +51,8 @@ body {
   font-size: 1rem;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 1023px) {
+
   /* Header */
   .navbar {
     /* top: 3.5rem; */
@@ -67,6 +68,33 @@ body {
     z-index: 1;
   }
 
+  .icon-style {
+    color: var(--gold);
+  }
+
+  #search-container {
+    display: flex;
+    flex-direction: row;
+    height: 3.5rem;
+
+  }
+
+  #search-btn {
+    /* border: 1px solid var(--gold); */
+    padding: 10px;
+    width: 3.5rem;
+    margin: 0;
+  }
+
+  input{
+    font-size: 1rem;
+    outline: none;
+    color: var(--gold);
+    /* border: 1px solid var(--gold); */
+    padding: 0 5px;
+    margin: 0;
+  }
+
   .navbar li a {
     padding: 1rem;
     cursor: pointer;
@@ -74,23 +102,24 @@ body {
     font-weight: 600;
     color: black;
     transition: ease-in-out 0.2s;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .nav-logo {
     height: 5vh;
     object-fit: cover;
     filter: hue-rotate(180deg) saturate(0) brightness(0);
-    
   }
 
   .navbar li {
     cursor: pointer;
     font-size: 20px;
   }
+
   .nav-item {
     display: none;
   }
+
   #responsive-menu {
     display: flex;
     flex-direction: column;
@@ -109,6 +138,7 @@ body {
     transition: ease-in-out 0.3s;
     transform: translate(0, 0)
   }
+
   #responsive-menu a {
     text-decoration: none;
     cursor: pointer;
@@ -116,8 +146,9 @@ body {
     font-weight: 600;
     color: black;
     transition: ease-in-out 0.2s;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
+
   /* Footer */
   #footer {
     margin-top: auto;
@@ -139,11 +170,13 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+
   /* Header */
   #responsive-menu {
     display: none;
   }
+
   .navbar {
     top: 3.5rem;
     position: relative;
@@ -173,7 +206,7 @@ body {
     object-fit: cover;
     transition: ease-in-out 0.2s;
     padding: 1rem;
-    
+
   }
 
   .navbar li {
@@ -181,7 +214,7 @@ body {
     font-size: 20px;
   }
 
-  .navbar li:hover > a {
+  .navbar li:hover>a {
     border-bottom: 2px solid white;
     /* color: black */
   }
@@ -193,6 +226,34 @@ body {
   .menu-icon {
     display: none;
   }
+
+  .icon-style {
+    color: var(--gold);
+  }
+
+  #search-container {
+    display: flex;
+    flex-direction: row;
+    height: 3.5rem;
+
+  }
+
+  #search-btn {
+    /* border: 1px solid var(--gold); */
+    padding: 10px;
+    width: 3.5rem;
+    margin: 0;
+  }
+
+  input{
+    font-size: 1.4rem;
+    outline: none;
+    color: var(--gold);
+    /* border: 1px solid var(--gold); */
+    padding: 0 5px;
+    margin: 0;
+  }
+
   /* Footer */
   #footer {
     margin-top: auto;

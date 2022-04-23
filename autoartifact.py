@@ -91,77 +91,76 @@ for i in example:
     print(f"\n ### {artifact_target[:-6]} ###\n ")
     
     html_content = f'''
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{artifact_name}</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{artifact_name}</title>
 
-        <!-- CSS Stylesheet -->
-        <link rel="stylesheet" href="../style/style.css">
-        <link rel="stylesheet" href="../style/3dview.css">
-        <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/3dview.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
 
-    </head>
+    <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" data-auto-replace-svg="nest"></script>
 
-    <body>
-        <div id="page3d">
-            <!-- Header -->
-            <header id="new-header"></header>
+</head>
 
-            <!-- Main -->
-            <main>
-                <div class="artifact-overview">
-                    <div class="sketchfab-embed-wrapper"> 
-                        <iframe title="{artifact_name}"
-                            frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
-                            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
-                            execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="350"
-                            src="https://sketchfab.com/models/{artifact_target}"> 
-                        </iframe>
-                        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #FFFFFF;"> <a
-                                href="https://sketchfab.com/3d-models/{artifact_target[:-6]}"
-                                target="_blank" class="redirect-link"> {artifact_name}
-                                </a> on <a
-                                href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=fc6e731a0131471ba8e45511c7ea9996"
-                                target="_blank" class="redirect-link">Sketchfab</a>
-                        </p>
-                    </div>
-                    <div class="artifact-info">
-                        <h1>{artifact_name}</h1>
-                        <div class="">
-                            <ul>
-                                <li><b>Material: </b>{artifact_material}</li>
-                                <li><b>Date: </b>{artifact_date}</li>
-                                <li><b>Found in: </b>{artifact_found_in}</li>
-                                <li><b>Description: </b>{artifact_description}</li>
-                            </ul>
-                        </div>
-                    </div>
+<body>
+    <div id="page3d">
+        <!-- Header -->
+        <header id="new-header"></header>
+
+        <!-- Main -->
+        <main>
+            <div class="artifact-overview">
+                <div class="sketchfab-embed-wrapper"> 
+                    <iframe title="{artifact_name}"
+                        frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                        execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="350"
+                        src="https://sketchfab.com/models/{artifact_target}"> 
+                    </iframe>
+                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #FFFFFF;"> <a
+                            href="https://sketchfab.com/3d-models/{artifact_target[:-6]}"
+                            target="_blank" class="redirect-link"> {artifact_name}
+                            </a> on <a
+                            href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=fc6e731a0131471ba8e45511c7ea9996"
+                            target="_blank" class="redirect-link">Sketchfab</a>
+                    </p>
                 </div>
+                <div class="artifact-info">
+                    <h1>{artifact_name}</h1>
+                    <div class="">
+                        <ul>
+                            <li><b>Material: </b>{artifact_material}</li>
+                            <li><b>Date: </b>{artifact_date}</li>
+                            <li><b>Found in: </b>{artifact_found_in}</li>
+                            <li><b>Description: </b>{artifact_description}</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
 
-            </main>
+        </main>
 
-            <!-- Footer -->
-            <footer id="footer"></footer>
+        <!-- Footer -->
+        <footer id="footer"></footer>
 
-        </div>
+    </div>
 
-        <!-- JavaScript -->
-        <script src="../script/footer.js"></script>
-        <script src="../explore/newHeader.js"></script>
-        <!-- <script>
-            console.log(window.location.href)
-        </script> -->
+    <!-- JavaScript -->
+    <script src="../script/footer.js"></script>
+    <script src="../explore/newHeader.js"></script>
 
-    </body>
+</body>
 
-    </html>
+</html>
 
-    '''
+'''
     with open(f"artifact/{i.lower()}.html", "w+") as target_file:
         target_file.write(html_content)
 

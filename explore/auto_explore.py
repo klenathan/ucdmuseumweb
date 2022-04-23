@@ -32,6 +32,8 @@ for i in cultures:
   <link rel="stylesheet" href="../style/artifact.css">
   <link rel="icon" type="image/x-icon" href="../assets/logo.png">
 
+  <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" data-auto-replace-svg="nest"></script>
+
 </head>
 
 <body>
@@ -80,7 +82,7 @@ for i in cultures:
 </html>
 
     '''
-    with open(f"./{i.lower()}.html", "w+") as target_file:
+    with open(f"../{i.lower()}.html", "w+") as target_file:
         target_file.write(html_content)
 
 
