@@ -21,6 +21,7 @@
   color: white;
   font-family: "Poppins", sans-serif;
   --gold: #c6b47b;
+  --secondary: #4d452d
 }
 
 /* width */
@@ -186,11 +187,11 @@ body {
     justify-content: space-around;
     list-style: none;
     padding-left: 2rem;
-    width: 50%;
+    width: 80%;
     height: 7vh;
   }
 
-  .navbar li a {
+  .nav-item a {
     padding: 1rem;
     cursor: pointer;
     text-decoration: none;
@@ -200,6 +201,7 @@ body {
     transition: ease-in-out 0.2s;
     font-size: 1.4rem;
   }
+
 
   .nav-logo {
     height: 7vh;
@@ -253,11 +255,22 @@ body {
     cursor: pointer
   }
 
+  #search-result{
+    display: absolute;
+    width: 400px;
+  }
+  #search-result ul {
+    background: var(--gold);
+    padding: 0.2rem 1rem
+  }
+  #search-result ul:hover{
+    background: var(--secondary);
+  }
+
   input{
     font-size: 1.4rem;
     outline: none;
     color: var(--gold);
-    /* border: 1px solid var(--gold); */
     padding: 0 5px;
     margin: 0;
   }
