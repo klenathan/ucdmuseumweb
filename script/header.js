@@ -33,16 +33,16 @@ document.querySelector("#header").innerHTML = header;
 var input = document.getElementById("search_artifact");
 
 // Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    let userInput = document.getElementById('search_artifact').value;
-    // console.log("Searched " + userInput)
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("search-btn").click();
-  }
+input.addEventListener("keyup", function (event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        let userInput = document.getElementById('search_artifact').value;
+        // console.log("Searched " + userInput)
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("search-btn").click();
+    }
 });
 
 // Responsive menu on mobile devices
@@ -64,6 +64,7 @@ function searchItem() {
             Object.keys(data).forEach(function (key) {
                 let userInput = document.getElementById('search_artifact').value;
                 let target = key.toLowerCase().split("_")
+                // console.log(target)
                 Object.keys(target).forEach(function (k) {
                     if (target[k].includes(userInput)) {
                         let result = data[key]["name"]
@@ -71,27 +72,34 @@ function searchItem() {
                         resultList = [...new Set(resultList)]
                         // window.location.href = "artifact/" + target.join("_") + ".html";
                     }
-                    else {
-                        // console.log("cannot find")
-                    }
                 })
                 // console.log(userInput === "")
-                console.log(resultList === [])
                 if (userInput === "" || userInput === " ") {
                     resultList = ["Result not found"]
-                } else if (resultList === []) {
+                } else if (resultList == false) {
                     resultList = ["Result not found"]
                 }
-                
-                
             });
 
-            for(v in resultList) {
+            for (v in resultList) {
                 // console.log(resultList[v])
-                var resultElement = document.createElement('ul')
-                resultElement.innerHTML = resultList[v]
-                resultElement.setAttribute('class', "search-result-element")
-                document.getElementById("search-result").appendChild(resultElement)
+                const resultElement = document.createElement('a');
+                resultElement.href = "artifact/" + resultList[v].toLowerCase().split(" ").join("_").replace(",","").replace("(","").replace(")","").replace("-","_") + ".html"
+                const list = document.getElementById('search-result');
+                const li = document.createElement('li');
+                list.setAttribute('class', "search-result-element")
+                li.innerHTML = resultList[v]
+                resultElement.appendChild(li);
+                list.appendChild(resultElement);
+
+                if (resultList == "Result not found") {
+                    resultElement.href = "#";
+                }
+
+                // console.log(resultElement)
+
+                // document.getElementById("search-result").appendChild(resultElement)
             }
+
         })
 }

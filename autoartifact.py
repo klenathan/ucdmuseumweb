@@ -22,7 +22,7 @@ example = {
     "target": "d237f8e61a5749a5be29398b16aa82a7/embed"
   },
   "Tombstone_of_King_Taejong_Muyeol_Gyeongju": {
-    "name": "Tombstone of King Taejong Muyeol , Gyeongju",
+    "name": "Tombstone of King Taejong Muyeol, Gyeongju",
     "material": "Large stone",
     "date": "7th century",
     "found_in": "Gyeongju, Gyeongsangbuk-do",

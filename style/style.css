@@ -87,7 +87,7 @@ body {
     margin: 0;
   }
 
-  input{
+  input {
     font-size: 1rem;
     outline: none;
     color: var(--gold);
@@ -243,7 +243,7 @@ body {
     border-bottom: 2px solid transparent;
   }
 
-  #search_artifact:focus{
+  #search_artifact:focus {
     border-bottom: 2px solid white;
   }
 
@@ -255,19 +255,27 @@ body {
     cursor: pointer
   }
 
-  #search-result{
+  #search-result {
     display: absolute;
     width: 400px;
+    text-decoration: none;
   }
-  #search-result ul {
+
+  #search-result a {
+    text-decoration: none;
+  }
+
+  #search-result li {
     background: var(--gold);
-    padding: 0.2rem 1rem
+    padding: 0.2rem 1rem;
+    list-style: none;
   }
-  #search-result ul:hover{
+
+  #search-result li:hover {
     background: var(--secondary);
   }
 
-  input{
+  input {
     font-size: 1.4rem;
     outline: none;
     color: var(--gold);
