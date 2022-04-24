@@ -19,6 +19,7 @@
   vertical-align: baseline;
   background: transparent;
   color: white;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
   --gold: #c6b47b;
   --secondary: #4d452d
@@ -119,6 +120,34 @@ body {
 
   .nav-item {
     display: none;
+  }
+
+  #search_artifact {
+    width: 50%;
+    margin-left: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white
+    /* border: 2px solid white */
+  }
+  ::placeholder {
+    color: white
+  }
+  #search-result {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: var(--gold)
+  }
+
+  #search-result a {
+    padding: 0
+  }
+
+  #search-result p {
+    padding: 0.5rem;
+    border-bottom: 1px solid black
   }
 
   #responsive-menu {
@@ -259,20 +288,28 @@ body {
     display: absolute;
     width: 400px;
     text-decoration: none;
+    list-style: none
   }
 
-  #search-result a {
-    text-decoration: none;
-  }
-
-  #search-result li {
+  #search-result p {
     background: var(--gold);
     padding: 0.2rem 1rem;
     list-style: none;
+    transition: ease-in 0.1s;
   }
 
-  #search-result li:hover {
+  #search-result:first-child{
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  #search-result:last-child {
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  #search-result p:hover {
     background: var(--secondary);
+    list-style: none;
+    text-decoration: none;
   }
 
   input {
