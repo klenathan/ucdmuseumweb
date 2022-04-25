@@ -22,7 +22,6 @@ let header = `
     <nav id="responsive-menu">
         <a href="explore.html" >Explore</a>
         <a href="artifact.html" >Artifacts</a>
-        <a href="#" >Search</a>
     </nav>
 `;
 

@@ -107,13 +107,12 @@
         background-color: #C6B47B;
         color: black;
     }
-
 }
+
 @media screen and (min-width: 1024px){
     body {
         overflow: hidden;
     }
-
 
     #landing-page {
         overflow: hidden

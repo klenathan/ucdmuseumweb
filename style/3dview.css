@@ -11,32 +11,26 @@
     overflow: hidden;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 88vh;
-}
-
 .artifact-overview {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    width: 80%;
-    margin-top: 10vh;
+    margin: 2rem auto;
     /* padding: 20px; */
     line-height: 2;
 }
 
-.redirect-link{
-    font-weight: bold; 
+.redirect-link {
+    font-weight: bold;
     color: var(--gold);
 }
 
 .sketchfab-embed-wrapper {
     background: rgba(0, 0, 0, 0.466);
     height: fit-content;
-    width: 500px;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -45,9 +39,11 @@ main {
     padding-bottom: 1rem
 }
 
-.sketchfab-embed-wrapper iframe{
+.sketchfab-embed-wrapper iframe {
     border-bottom: 5px solid var(--gold);
     border-radius: 15px 15px 0 0;
+    width: 20rem;
+    height: 20rem;
 }
 
 .sketchfab-embed-wrapper p {
@@ -55,22 +51,22 @@ main {
     color: white
 }
 
-h1 { 
+h1 {
     color: var(--gold);
     padding: 0 15px;
 }
 
 .artifact-info {
+    width: 18rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 15px;
+    padding: 1rem 10px;
     background: rgba(0, 0, 0, 0.377);
     border: 3px solid #c6b47b59;
-    margin-left: 1rem;
+    margin: 1rem auto;
     border-radius: 1rem;
     height: max-content;
-    width: 60%
 }
 
 .artifact-info ul li {
@@ -79,6 +75,57 @@ h1 {
     padding: 0 15px;
 }
 
-.artifact-info b{
+.artifact-info b {
     color: white
+}
+
+
+@media screen and (min-width: 767px) and (max-width:1023px) {
+    .sketchfab-embed-wrapper {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .sketchfab-embed-wrapper iframe {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .artifact-info {
+        width: 40rem;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 88vh;
+    }
+
+    .artifact-overview {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60rem;
+        margin-top: 10vh;
+    }
+
+    .sketchfab-embed-wrapper {
+        width: 30rem;
+        height: fit-content;
+    }
+
+    .sketchfab-embed-wrapper iframe {
+        width: 30rem;
+    }
+
+    .artifact-info {
+        margin-left: 1rem;
+        border-radius: 1rem;
+        height: max-content;
+        width: 60%
+    }
 }

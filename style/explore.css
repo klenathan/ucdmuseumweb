@@ -19,26 +19,29 @@
 /* Mobile devices */
 @media screen and (max-width: 1023px) {
     #overview {
-        margin: 7vh 2rem;
+        margin: 2rem;
     }
-    
+
+    #explore-page {
+        overflow: hidden;
+    }
     main {
         min-height: 80vh
     }
-    
+
     .dynasty-desc h1 {
         font-size: 2rem;
         font-weight: bold;
         color: var(--gold);
         text-align: center;
     }
-    
+
     .dynasty-desc p {
         line-height: 2;
         margin: 10px 0;
         font-size: 1.1rem
     }
-    
+
     .img-row {
         display: flex;
         flex-direction: column;
@@ -46,13 +49,13 @@
         margin: 2rem 0;
         gap: 3rem
     }
-    
+
     .img-row a {
         cursor: pointer;
         text-decoration: none;
         font-weight: 600;
     }
-    
+
     .img-info {
         display: flex;
         flex-direction: column;
@@ -65,55 +68,57 @@
         border-radius: 17px;
         background: #f1f1f1;
         transition: ease-in-out 0.3s;
-        
+
     }
-    
+
     .img-info img {
         width: 100%;
         height: 15rem;
         object-fit: cover;
         border-bottom: 5px solid var(--gold);
-        border-radius: 1rem 1rem 0 0 
+        border-radius: 1rem 1rem 0 0
     }
-    
+
     .img-info p {
         font-size: 1.5rem;
         width: 100%;
         color: black;
         padding: 0.5rem 0
     }
-    
-    .img-info:hover{
+
+    .img-info:hover {
         background-color: var(--gold);
     }
-    
-    .img-info:hover > img {
+
+    .img-info:hover>img {
         border-bottom: 5px solid black;
     }
 }
 
-@media screen and (min-width: 1024px){
+
+
+@media screen and (min-width: 1024px) {
     #overview {
         margin: 5rem 5rem;
     }
-    
+
     main {
         min-height: 80vh
     }
-    
+
     .dynasty-desc h1 {
         font-size: 2rem;
         font-weight: bold;
         color: var(--gold);
         text-align: center;
     }
-    
+
     .dynasty-desc p {
         line-height: 2;
         margin: 10px 0;
         font-size: 1.1rem
     }
-    
+
     .img-row {
         display: flex;
         flex-direction: row;
@@ -121,13 +126,13 @@
         margin: 2rem 0;
         gap: 3rem
     }
-    
+
     .img-row a {
         cursor: pointer;
         text-decoration: none;
         font-weight: 600;
     }
-    
+
     .img-info {
         display: flex;
         flex-direction: column;
@@ -140,29 +145,29 @@
         border-radius: 17px;
         background: #f1f1f1;
         transition: ease-in-out 0.3s;
-        
+
     }
-    
+
     .img-info img {
         width: 100%;
         height: 15rem;
         object-fit: cover;
         border-bottom: 5px solid var(--gold);
-        border-radius: 1rem 1rem 0 0 
+        border-radius: 1rem 1rem 0 0
     }
-    
+
     .img-info p {
         font-size: 1.5rem;
         width: 100%;
         color: black;
         padding: 0.5rem 0
     }
-    
-    .img-info:hover{
+
+    .img-info:hover {
         background-color: var(--gold);
     }
-    
-    .img-info:hover > img {
+
+    .img-info:hover>img {
         border-bottom: 5px solid black;
     }
 }
