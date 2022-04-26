@@ -414,6 +414,7 @@ body {
 
   #search_artifact {
     border-bottom: 2px solid transparent;
+    width: min(12rem, 50%);
   }
 
   #search_artifact:focus {
@@ -426,6 +427,10 @@ body {
     width: 3.5rem;
     margin: 0;
     cursor: pointer
+  }
+
+  #search-btn svg{
+    width: 50px;
   }
 
   #search-result {

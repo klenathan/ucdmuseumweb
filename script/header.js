@@ -10,9 +10,10 @@ let header = `
             <li class="nav-item"><a href="artifact.html">Artifacts</a></li>
 
             <li id="search-container">
-                <input id="search_artifact" type="text" placeholder="Search artifact...">
+                
                 <button id="search-btn" type="submit"><i
                 class="icon-style fa-2x fa-solid fa-magnifying-glass" style="color: #c6b47b;"></i></button>
+                <input id="search_artifact" type="text" placeholder="Search artifact...">
                 <ul id="search-result"></ul>
             </li>
 
