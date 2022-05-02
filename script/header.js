@@ -13,7 +13,7 @@ let header = `
                 
                 <button id="search-btn" type="submit"><i
                 class="icon-style fa-2x fa-solid fa-magnifying-glass" style="color: #c6b47b;"></i></button>
-                <input id="search_artifact" type="text" placeholder="Search artifact...">
+                <input id="search_artifact" type="text" placeholder="Search by name...">
                 <ul id="search-result"></ul>
             </li>
 
