@@ -100,10 +100,6 @@ function searchItem() {
                 if (resultList == "Result not found") {
                     resultElement.href = "#";
                 }
-
-                // console.log(resultElement)
-
-                // document.getElementById("search-result").appendChild(resultElement)
             }
 
         })
